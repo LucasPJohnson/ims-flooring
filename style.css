@@ -11,9 +11,9 @@ body {
   overflow: hidden;
 }
 
-.topnav a {
-  float: left;
+.topnavItem {
   display: block;
+  float: left;
   color: #010D16;
   text-align: center;
   padding: 18px 20px;
@@ -21,12 +21,12 @@ body {
   font-size: 20px;
 }
 
-.topnav a:hover {
+.topnavItem:hover {
   background-color: #5591BF;
   color: black;
 }
 
-.topnav a.active {
+.topnavItem.active {
   background-color: #143C5A;
   color: white;
 }
@@ -43,9 +43,31 @@ body {
   padding: 10px 12px;
 }
 
+.pre-header-item {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  width: 7rem;
-  height: 3rem;
+  width: 5rem;
+  height: 2rem;
+}
+
+.logoLink {
+  display: block;
+  float: left;
+  padding: 14px 10px 10px 10px;
+}
+
+.topnavItem.responsive {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.linkedIn {
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -63,21 +85,3 @@ body {
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.pre-header-item {
-  display: flex;
-  align-items: center;
-
-}
-
-.linkedin {
-  height: 1.5rem;
-  width: 1.5rem;
-  padding-left: 10px;
-}
